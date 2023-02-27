@@ -1,34 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <div class="banner">
-            <div class="about-sign-in">
-                <div id="about"><a href="#">About</a></div>
-                <div id="signin"><a href="#">Sign In</a></div>
-            </div>
-            <div class="logo">
 
+<body>
+    <div class="container-ctm" style="background: url('./images/background.jpg')">
+        <div class="header-profile">
+
+            <div class="header-left">
+                <h3>vo manh hai</h3>
+                <h5>Web developer Fresher</h5>
+                <div class="information">
+                    <div class="item">
+                        <h6><span>Name</span></h6>
+                        <div class="infor-ctm"><span>Vo Manh Hai</span></div>
+                    </div>
+                    <div class="item">
+                        <h6><span>Phone</span></h6>
+                        <div class="infor-ctm"><span>0767255321</span></div>
+                    </div>
+                    <div class="item">
+                        <h6><span>Birth</span></h6>
+                        <div class="infor-ctm"><span>23/07/2000</span></div>
+                    </div>
+                    <div class="item">
+                        <h6><span>Email</span></h6>
+                        <div class="infor-ctm"><span>vomanhhai230720@gmail.com</span></div>
+                    </div>
+                    <div class="item">
+                        <h6><span>Facebook</span></h6>
+                        <div class="infor-ctm"><a
+                                href="https://www.facebook.com/vu.dac.96"><span>https://www.facebook.com/vu.dac.96</span></a></div>
+                    </div>
+                    <div class="item">
+                        <h6><span>GitHub</span></h6>
+                        <div class="infor-ctm"><a href="https://github.com/Manhhai1"><span>https://github.com/Manhhai1</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="icons">
-                <div id="icon-1"><div><img src="./images/icon-gift.svg" alt=""></div><span>Better</span></div>
-                <div id="icon-2"><div><img src="./images/icon-clock.svg" alt=""></div><span>Faster</span></div>
-                <div id="icon-3"><div><img src="./images/icon-like.svg" alt=""></div><span>Together</span></div>
+            <div class="header-right">
+                <div class="image-avatar" style="background: url('./images/avatar.jpg')" >
+                    <a class="avatar-link" href="https://www.facebook.com/vu.dac.96" ></a>
+                </div>
             </div>
-            <div class="text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </div>
-            <div class="button">
-                <Button>start now</Button>
+
+        </div>
+        <div class="content">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active " id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        onclick="ClickOpenTab('overview-tab','overview')" type="button" role="tab"
+                        aria-controls="overview" aria-selected="false">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience"
+                        onclick="ClickOpenTab('experience-tab', 'experience')" type="button" role="tab"
+                        aria-controls="experience" aria-selected="true">Work
+                        experience</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education"
+                        onclick="ClickOpenTab('education-tab', 'education')" type="button" role="tab"
+                        aria-controls="education" aria-selected="false">Education</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="skill-tab" data-bs-toggle="tab" data-bs-target="#skill" type="button"
+                        onclick="ClickOpenTab('skill-tab', 'skill')" role="tab" aria-controls="skill"
+                        aria-selected="false">Skills</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="project1-tab" data-bs-toggle="tab" data-bs-target="#project1"
+                        onclick="ClickOpenTab('project1-tab', 'project1')" type="button" role="tab"
+                        aria-controls="project1" aria-selected="false">Project 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="project2-tab" data-bs-toggle="tab" data-bs-target="#project2"
+                        onclick="ClickOpenTab('project2-tab', 'project2')" type="button" role="tab"
+                        aria-controls="project2" aria-selected="false">Project 2</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <ul>
+                        <li>
+                            <p>Over 6 months of experience in programming with good communication and quick learning
+                                skills</p>
+                        </li>
+                        <li>
+                            <p> Strengths: Front-end technology and Back-end web application development</p>
+                        </li>
+                        <li>
+                            <p>Proficiency in HTML, CSS, JavaScript</p>
+                        </li>
+                        <li>
+                            <p>Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object
+                                model</p>
+                        </li>
+                        <li>
+                            <p>Thorough under standing of React.js and it score principles</p>
+                        </li>
+                        <li>
+                            <p>Experience with popular React.js workflows (such as Flux or Redux)</p>
+                        </li>
+                        <li>
+                            <p>Familiarity with RESTful APIs, Rest Api</p>
+                        </li>
+                        <li>
+                            <p>Strong Experience in: JavaScript (ReactJS), MySQL, NoSQL, JSON, API
+                        </li>
+                        <li>
+                            <p>Proficient use of source code management tools: GIT</p>
+                        </li>
+                        <li>
+                            <p> Ability to learn and apply new technology quickly</p>
+                        </li>
+                        <li>
+                            <p>Current working location: Ho Chi Minh, Viet Nam</p>
+                        </li>
+                </div>
+                <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                    <ul>
+                        <li>
+                            <p> Experience learn, work at school in 6 months and practice at home in all days</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="contact-tab">
+                    <ul>
+                        <li class="item-education">Time: <p class="item-education-children">2018/10 – 2022/10</p>
+                        </li>
+                        <li class="item-education">School: <p class="item-education-children">Univervity of Science</p>
+                        </li>
+                        <li class="item-education">Major: <p class="item-education-children">Information Technology</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade " id="skill" role=" tabpanel" aria-labelledby="skill-tab">
+                    <ul>
+                        <p>Main</p>
+                        <li>
+                            <p>HTML, CSS, JavaScript (ReactJS)</p>
+                        </li>
+                        <li>
+                            <p>Node (ExpressJS)</p>
+                        </li>
+                        <li>
+                            <p>RESTful API, GraphQL
+                            </p>
+                        </li>
+                        <li>
+                            <p>MySQL, PostgreSQL, NoSQL (MongoDB)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="project1" role="tabpanel" aria-labelledby="project1-tab">
+                    <p><a href="https://frontend-bookingcare-gamma.vercel.app/">Clone BookingCare</a></p>
+                    <p> <a href="https://bookingcare.vn/">BookingCare.vn</a></p>
+                    <p style="color: red">(12/2022 - Present)</p>
+                    <ul>
+                        <li>
+                            <h5>Descriptions</h5>
+                            <ul>
+                                <p>Make an appointment to see a doctor, choice good doctor, specialty, telemedicine
+                                    after
+                                    choice booking schedule. Server will send email accept Booking to patient.
+                                    Doctor can sign-in to manage schedules its, update infor
+                                    ...</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Number of members</h5>
+                            <ul>
+                                <p>1</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Postion</h5>
+                            <ul>
+                                <p>Developer</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Responsibilities</h5>
+                            <ul>
+                                <p>Developer</p>
+                                <p>Solution architect</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Technology in use</h5>
+                            <ul>
+                                <p>Frontend: ReactJS, Redux </p>
+                                <p>Backend: NodeJS</p>
+                                <p>Database: MySql</p>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="project2-tab">
+                    <p><a href="https://adamstore.vercel.app/">Clone AdamStore</a></p>
+                    <p> <a href="https://adamstorevn.com/">AdamStorevn.com</a></p>
+                    <p style="color: red">(2/2022 - Present)</p>
+                    <ul>
+                        <li>
+                            <h5>Descriptions</h5>
+                            <ul>
+                                <p>Application buy clothes online, user and customers can choice clothes they like,
+                                    after payment
+                                    all items they buy..
+                                    admin can update product, user, delete... and view histories customers bought</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Number of members</h5>
+                            <ul>
+                                <p>1</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Postion</h5>
+                            <ul>
+                                <p>Developer</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Responsibilities</h5>
+                            <ul>
+                                <p>Developer</p>
+                                <p>Solution architect</p>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Technology in use</h5>
+                            <ul>
+                                <p>Frontend: HTML, CSS, ReactJS, Bootraps</p>
+                                <p>Backend: NodeJS</p>
+                                <p>Database: MongoDB</p>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
+    <script>
+        function ClickOpenTab(item, tab) {
+            let allElements = document.getElementsByClassName('nav-link')
+            let allTabs = document.getElementsByClassName('tab-pane')
+            for (let i = 0; i < allElements.length; i++) {
+                allElements[i].classList.remove('active')
+                allTabs[i].classList.remove('show')
+                allTabs[i].classList.remove('active')
+            }
+            let element = document.getElementById(`${item}`)
+            let tabOpen = document.getElementById(`${tab}`)
+            console.log(tabOpen)
+            element.classList.add('active')
+            tabOpen.classList.add('show')
+            tabOpen.classList.add('active')
+        }
+    </script>
 </body>
+
 </html>
